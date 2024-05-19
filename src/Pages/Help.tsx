@@ -23,11 +23,7 @@ const Help: React.FC = () => {
   };
   return (
     <div className="relative h-screen w-screen overflow-hidden">
-      <img
-        src={welcome}
-        alt="monkey BG"
-        className="h-full w-full object-cover"
-      />
+      <img src={welcome} className="h-full w-full object-cover" />
       <img
         src={prompt3}
         alt="Overlay"
@@ -35,14 +31,12 @@ const Help: React.FC = () => {
       />
       <img
         src={yes}
-        alt="Overlay"
         className="absolute top-3/4 left-2/3 w-40 md:left-3/4 md:top-3/4 md:mt-16 float-animation transition duration-100 transform hover:scale-110 hover:animate-none"
         onClick={handleClick}
         style={{ cursor: "pointer" }}
       />
       <img
         src={back}
-        alt="Overlay"
         className="absolute top-5 left-8 w-12 md:left-8 md:top-5 float-animation transition duration-100 transform hover:scale-110 hover:animate-none "
         onClick={handleClick1}
         style={{ cursor: "pointer" }}

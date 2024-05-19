@@ -16,19 +16,13 @@ const WelcomeKiddo: React.FC = () => {
 
   return (
     <div className="relative h-screen w-screen overflow-hidden">
-      <img
-        src={welcome}
-        alt="monkey BG"
-        className="h-full w-full object-cover"
-      />
+      <img src={welcome} className="h-full w-full object-cover" />
       <img
         src={prompt}
-        alt="Overlay"
         className="absolute top-0 left-1/6 m-4 h-40 w-50 md:left-1/2 float-animation"
       />
       <img
         src={start}
-        alt="Overlay"
         className="absolute top-3/4 left-2/3 w-40 md:left-3/4 md:top-3/4 md:mt-10 float-animation transition duration-100 transform hover:scale-110 hover:animate-none"
         onClick={handleClick}
         style={{ cursor: "pointer" }}

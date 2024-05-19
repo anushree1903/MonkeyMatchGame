@@ -26,44 +26,25 @@ const InstPage: React.FC = () => {
   };
   return (
     <div className="relative h-screen w-screen overflow-hidden">
-      <img
-        src={bg}
-        alt="Background"
-        className="h-full w-full object-cover absolute"
-      />
+      <img src={bg} className="h-full w-full object-cover absolute" />
       <img
         src={line}
-        alt="Background"
         className=" w-1/2 object-cover absolute left-1/3 top-1/3 "
       />
 
       <div className="relative container mx-auto p-4 h-screen flex flex-col overflow-scroll  items-center space-y-4 md:space-y-0 md:space-x-4 md:flex-row md:justify-center  ">
-        <img
-          src={inst1}
-          alt="Image 1"
-          className="w-3/4 md:w-96 animate-float-up"
-        />
-        <img
-          src={inst2}
-          alt="Image 2"
-          className="w-3/4 md:w-96 animate-float-down "
-        />
-        <img
-          src={inst3}
-          alt="Image 3"
-          className="w-3/4 md:w-96 animate-float-up"
-        />
+        <img src={inst1} className="w-3/4 md:w-96 animate-float-up" />
+        <img src={inst2} className="w-3/4 md:w-96 animate-float-down " />
+        <img src={inst3} className="w-3/4 md:w-96 animate-float-up" />
       </div>
       <img
         src={back}
-        alt="Overlay"
         className="absolute top-5 left-8 w-12 md:left-8 md:top-5 float-animation transition duration-100 transform hover:scale-110 hover:animate-none"
         onClick={handleClick1}
         style={{ cursor: "pointer" }}
       />
       <img
         src={play}
-        alt="Overlay"
         className="absolute bottom-2 left-2/3 w-40 md:left-3/4 md:top-3/4 md:mt-14 float-animation transition duration-100 transform hover:scale-110 hover:animate-none"
         onClick={handleClick}
         style={{ cursor: "pointer" }}

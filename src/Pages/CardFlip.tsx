@@ -95,7 +95,6 @@ const CardFlip: React.FC = () => {
     <div className="relative h-screen w-screen overflow-hidden">
       <img
         src={welcome}
-        alt="background"
         className="h-full w-full object-cover absolute inset-0 z-0"
       />
       <img
@@ -115,7 +114,6 @@ const CardFlip: React.FC = () => {
         <div className="relative w-20 h-20 md:w-32 md:h-28">
           <img
             src={bananaLogo}
-            alt="Banana Logo"
             style={{
               filter: `grayscale(${100 - (timeLeft / 30) * 100}%)`,
               width: "100%",
@@ -176,11 +174,7 @@ const CardFlip: React.FC = () => {
           <div className="bg-[#FFF5D1] p-8 rounded-md shadow-md text-center">
             <h2 className="text-6xl font-bold mb-1">Game Over</h2>
             <p className="mb-4">Your time is up!</p>
-            <img
-              src={Monkey}
-              className="h-36 w-36 mx-auto"
-              alt="monkey image"
-            />
+            <img src={Monkey} className="h-36 w-36 mx-auto" />
             <h2 className="text-4xl py-4 font-semibold ">
               You've Earned {score} Bananas!
             </h2>
@@ -206,11 +200,7 @@ const CardFlip: React.FC = () => {
           <div className="bg-[#FFF5D1] p-8 rounded-md shadow-md text-center">
             <h2 className="text-6xl font-bold mb-1">You Win!</h2>
             <p className="mb-4">Congratulations, you matched all the cards!</p>
-            <img
-              src={Monkey}
-              className="h-36 w-36 mx-auto"
-              alt="monkey image"
-            />
+            <img src={Monkey} className="h-36 w-36 mx-auto" />
             <h2 className="text-4xl py-4 font-semibold ">
               You've Earned {score} Bananas!
             </h2>
