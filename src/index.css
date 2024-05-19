@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float-up {
+  animation: float-up 3s ease-in-out infinite;
+}
+
+.animate-float-down {
+  animation: float-down 3s ease-in-out infinite;
+}
+
+
+.transition-transform {
+  transition: transform 2s ease-in-out infinite;
+}
+
+.transition-transform {
+  transition: transform 3s;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
