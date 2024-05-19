@@ -45,7 +45,7 @@ const InstPage: React.FC = () => {
       />
       <img
         src={play}
-        className="absolute bottom-2 left-2/3 w-40 md:left-3/4 md:top-3/4 md:mt-14 float-animation transition duration-100 transform hover:scale-110 hover:animate-none"
+        className="absolute bottom-2 left-1/2 ml-14 w-40 md:left-3/4 md:top-3/4 md:mt-14 float-animation transition duration-100 transform hover:scale-110 hover:animate-none"
         onClick={handleClick}
         style={{ cursor: "pointer" }}
       />

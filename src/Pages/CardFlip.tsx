@@ -99,8 +99,7 @@ const CardFlip: React.FC = () => {
       />
       <img
         src={back}
-        alt="Overlay"
-        className="absolute top-5 left-8 w-12 md:left-8 md:top-5 float-animation transition duration-100 transform hover:scale-110 hover:animate-none"
+        className="absolute top-5 left-8 w-12 md:left-8 md:top-5 float-animation transition duration-100 transform hover:scale-110 hover:animate-none z-10"
         onClick={handleClick1}
         style={{ cursor: "pointer" }}
       />
