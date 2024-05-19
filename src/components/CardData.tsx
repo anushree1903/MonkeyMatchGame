@@ -22,7 +22,6 @@ export const Card1BackData = [
   { img: grapes, title: "grapes" },
 ];
 
-// Back data for card2
 export const Card2BackData = [
   { img: a, title: "a" },
   { img: b, title: "b" },
@@ -32,7 +31,6 @@ export const Card2BackData = [
   { img: g, title: "g" },
 ];
 
-// Front data for card1
 export const Card1FrontData = [
   { img: card1, title: "red" },
   { img: card1, title: "red" },
@@ -42,7 +40,6 @@ export const Card1FrontData = [
   { img: card1, title: "red" },
 ];
 
-// Front data for card2
 export const Card2FrontData = [
   { img: card2, title: "blue" },
   { img: card2, title: "blue" },

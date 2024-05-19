@@ -31,7 +31,6 @@ const CardFlip: React.FC = () => {
     { index: number; type: string }[]
   >([]);
   const [matchedCards, setMatchedCards] = useState<number[]>([]);
-  const [resetFlipped, setResetFlipped] = useState<boolean>(false);
   const [timeLeft, setTimeLeft] = useState<number>(30);
   const [timeout, setTimeoutState] = useState<boolean>(false);
   const [timeOver, setTimeOver] = useState<boolean>(false);
@@ -69,12 +68,9 @@ const CardFlip: React.FC = () => {
         if (newMatchedCards.length === Card1FrontData.length) {
           setGameWon(true);
         }
-      } else {
-        setResetFlipped(true);
       }
       setTimeout(() => {
         setFlippedCards([]);
-        setResetFlipped(false);
       }, 1000);
     }
   };
@@ -88,7 +84,6 @@ const CardFlip: React.FC = () => {
   const handlePlayAgain = () => {
     setFlippedCards([]);
     setMatchedCards([]);
-    setResetFlipped(false);
     setTimeLeft(30);
     setTimeoutState(false);
     setTimeOver(false);
@@ -178,7 +173,7 @@ const CardFlip: React.FC = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="bg-[#FFF5D1] bg-opacity-60 p-8 rounded-md shadow-md text-center">
+          <div className="bg-[#FFF5D1] p-8 rounded-md shadow-md text-center">
             <h2 className="text-6xl font-bold mb-1">Game Over</h2>
             <p className="mb-4">Your time is up!</p>
             <img
