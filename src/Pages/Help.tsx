@@ -26,7 +26,6 @@ const Help: React.FC = () => {
       <img src={welcome} className="h-full w-full object-cover" />
       <img
         src={prompt3}
-        alt="Overlay"
         className="absolute top-10 left-1/3 m-4 w-64 h-40 md:left-1/2 md:top-0 md:h-52 md:w-80 float-animation"
       />
       <img
